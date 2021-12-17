@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tobias Nicolas Villarroel Pini">
+    <meta name="copyright" content="Pinitech">
+    <meta name="description" content="Somos un grupo de amigos que buscamos dar un salto en nuestra vida independizándonos en nuestro trabajo.">
+    <meta name="keywords" content="Valencia, pintura, alisado, impermeabilizacion, decoracion, gotelé, trabajo vertical, pladur">
+    <title>Pintamos tu casa</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script type="module" src="./src/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/9b1b82eb65.js" rel="preconnect" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">URUTINA <i class="fas fa-paint-roller" style="color: white; position: relative; margin-right: 0px;"></i>INTURAS</h1>
+        <section id="phone-contacts">
+            <div id="phones">
+                <i class="fas fa-phone" style="color: white;"></i><span class="phone-contact">+34 671 165 478</span> <br>
+            </div>
+            <div id="phones">
+                <i class="fas fa-phone" style="color: white;"></i><span class="phone-contact">+34 643 782 660</span>
+            </div>
+        </section>
+        <nav>
+            <ul id="menu">
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li class="menu-item" id="dropdown">Servicios
+                    <ul id="dropdown-content">
+                        <li>Pintura</li>
+                        <li>Alisado</li>
+                        <li>Impermeabilización</li>
+                        <li>Decoración</li>
+                        <li>Gotelé</li>
+                        <li>Trabajo Vertical</li>
+                        <li>Pladur</li>
+                    </ul>
+                </li>
+                <li class="menu-item">Galeria</li>
+                <li id="whatsapp-icon"><a href="https://wa.me/34671165478?text=Me%20interesa%20más%20información%20por%20favor." target="_blank" rel="noopener">Envíanos un mensaje<i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="article-container">
+            <figure id="main-article">
+                <img src="./assets/pintura.jpg" alt="pintura">
+                <figcaption>PINTURA</figcaption>
+            </figure>
+            <figure class="sub-articles" id="article-2">
+                <img class="sub-article" src="./assets/alisado.jpg" alt="alisado">
+                <figcaption>ALISADO</figcaption>
+            </figure>
+            <figure class="sub-articles" id="article-3">
+                <img class="sub-article" src="./assets/impermeabilizacion-terrazas.jpg" alt="impermeabilizacion de terrazas">
+                <figcaption>IMPERBEALIZACIÓN DE TERRAZAS</figcaption>
+            </figure>
+            <figure class="sub-articles" id="article-4">
+                <img class="sub-article" src="./assets/decoracion.jpg" alt="decoracion">
+                <figcaption>DECORACIÓN</figcaption>
+            </figure>
+            <figure class="sub-articles" id="article-5">
+                <img class="sub-article" src="./assets/gotele.jpg" alt="gotele">
+                <figcaption>GOTELÉ</figcaption>
+            </figure>
+            <figure class="sub-articles" id="article-6">
+                <img class="sub-article" src="./assets/trabajovertical.jpg" alt="trabajovertical">
+                <figcaption>TRABAJO VERTICAL CON PINTURA</figcaption>
+            </figure>
+            <figure class="sub-articles" id="article-7">
+                <img class="sub-article" src="./assets/pladur.jpg" alt="pladur">
+                <figcaption>PLADUR</figcaption>
+            </figure>
+        </article>
+    </main>
+    <aside>
+        <section id="openFormSection">
+            <span><mark>Click aquí para abrir el formulario!</mark></span>
+            <button id="formMobilIcon">
+                CONTACTANOS! <i class="fab fa-wpforms"></i>
+            </button>
+        </section>
+        <form name="contact">
+            <div id="form-container">
+                <fieldset id="contact">
+                    <legend>Formulario de contacto</legend>
+                    <i class="far fa-times-circle"></i>
+                    <label for="name">Nombre</label> <input name='name' type='text' id="nombre-input" placeholder="Nombre"> <br>
+                    <label>¿Cómo te contactamos?</label>
+                    <label class="cboxes" for="checkboxs"><input type="checkbox" name="checkboxs" id="cboxTelefono" value="Telefono"> Telefono</label>
+                    <label class="cboxes" for="checkboxs"><input type="checkbox" name="checkboxs" id="cboxEmail" value="Email"> Correo electronico</label>
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="Telefono" disabled> <br>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" disabled> <br>
+                    <textarea name="textarea" id="textarea" rows="5" cols="15" >Detalla brevemente tu consulta y nos comunicaremos lo mas pronto posible.</textarea>
+                    <button id="sendBtnForm" onclick="sendData">ENVIAR</button>
+                </fieldset>
+            </div>
+        </form>
+    </aside>
+    
+    <section id="services-container">
+        <article class="service-container">
+            <img src="./assets/pintura.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis ullam similique eius, ea hic fuga unde minus expedita veritatis quod cupiditate. Illo nostrum amet ab non vel odio similique ipsam, expedita voluptas harum modi ducimus placeat voluptatibus tempore possimus natus libero quia asperiores</p>
+        </article>
+        <article class="service-container">
+            <img src="./assets/alisado.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis ullam similique eius, ea hic fuga unde minus expedita veritatis quod cupiditate. Illo nostrum amet ab non vel odio similique ipsam, expedita voluptas harum modi ducimus placeat voluptatibus tempore possimus natus liberoomnis.</p>
+        </article>
+        <article class="service-container">
+            <img src="./assets/decoracion.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis ullam similique eius, ea hic fug, ad, consequuntur ipsum esse unde velit id at eos. Harum inventore pariatur rem aperiam, nihil quae dolorem expedita mollitia, earum optio reiciendis? Consequatur illo suscipit maiores et minima quisquam omnis.</p>
+        </article>
+        <article class="service-container">
+            <img src="./assets/gotele.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis ullam similique eius, ea hic fuga unde minus expedita veritatis quod cupiditate. Illo nostrum amet ab non vel odio similique ipsam, expedita voluptas harum modi ducimus placeat voluptatibus tempore possimusuisquam omnis.</p>
+        </article>
+        <article class="service-container">
+            <img src="./assets/impermeabilizacion-terrazas.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.is dolores, ad, consequuntur ipsum esse unde velit id at eos. Harum inventore pariatur rem aperiam, nihil quae dolorem expedita mollitia, earum optio reiciendis? Consequatur illo suscipit maiores et minima quisquam omnis.</p>
+        </article>
+        <article class="service-container">
+            <img src="./assets/pladur.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis ullam similique eius, ea hic fuga unde minus expedita veritatis quod cupiditate. Illo nostrum amet ab non vel odio similique ipsam, expedita voluptas harum modi ducimus placeat volulo suscipit maiores et minima quisquam omnis.</p>
+        </article>
+        <article class="service-container" id="last-article">
+            <img src="./assets/pintura.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing eltempore possimus natus libero quia asperiores enim fugiat molestiae perspiciatis? Nobis minima, molestiae rerum quidem, soluta laudantium expedita nihil culpa atque quia, vel hic ex ad. Harum voluptao suscipit maiores et minima quisquam omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati, excepturi nihil deleniti voluptates deserunt repellendus aperiam et explicabo veniam, expedita itaque minima possimus ad ab quas non accusantium! Ad, eos. Cum molestias labore, nemo sit ullam suscipit est impedit eos perferendis itaque? Ut, facilis quaerat! Omnis laudantium sapiente officia.</p>
+        </article>
+    </section>
+        
+    <section id="footer-container">
+        <footer>
+            <h5>Desarrollado por Pinitech con la intención de independizarnos, mejorar nuestra calidad de vida y de los servicios que ofrecemos.</h5>
+        </footer>
+    </section>
+</body>
+</html>
