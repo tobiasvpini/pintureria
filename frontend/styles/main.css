@@ -203,6 +203,11 @@ html{
         resize: none;
     }
 
+    #captcha{
+        position: relative;
+        margin: 10px;
+    }
+
     #sendBtnForm{
         position: relative;
         margin-top: 25px;
