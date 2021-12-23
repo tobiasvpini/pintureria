@@ -84,7 +84,7 @@
                 CONTACTANOS! <i class="fab fa-wpforms"></i>
             </button>
         </section>
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" netlify data-netlify-recaptcha="true">
             <div id="form-container">
                 <fieldset id="contact">
                     <legend>Formulario de contacto</legend>
@@ -98,7 +98,10 @@
                     <label for="email">Correo electrónico</label>
                     <input type="email" name="email" id="email" placeholder="Correo electrónico" disabled> <br>
                     <textarea name="textarea" id="textarea" rows="5" cols="15" >Detalla brevemente tu consulta y nos comunicaremos lo mas pronto posible.</textarea>
+                    <input type="hidden" name="subject" value="formulario contacto urutina-pinturas">
+                    <div data-netlify-recaptcha="true"></div>
                     <button id="sendBtnForm" onclick="sendData">ENVIAR</button>
+                    
                 </fieldset>
             </div>
         </form>
