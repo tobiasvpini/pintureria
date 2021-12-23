@@ -156,7 +156,7 @@ html{
         position: relative;
         margin-left: 48px;
         width: 300px;
-        height: 200px;
+        height: 500px;
         font-size: 15px;
         z-index: 1;
     }
@@ -184,7 +184,7 @@ html{
         flex-direction: column;
         flex-wrap: nowrap;
         width: 270px;
-        height: 425px;
+        height: 500px;
         box-shadow: 5px 5px 6px rgb(38, 38, 95);
     }
 
@@ -206,6 +206,8 @@ html{
     #captcha{
         position: relative;
         margin: 10px;
+        height: 45px;
+        width: 175px;
     }
 
     #sendBtnForm{
