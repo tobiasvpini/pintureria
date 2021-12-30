@@ -2,6 +2,7 @@ import hideForm from "./closeForm.js";
 import validateCheckbox from "./validateCheckboxes.js";
 import changeMainImg from "./changeMainImg.js";
 import showForm from "./openForm.js";
+import checkOffset from "./handleScroll.js";
 
 function addEvents(){
     document.querySelector("#formMobilIcon").onclick = showForm;
@@ -10,10 +11,14 @@ function addEvents(){
     document.querySelector("#cboxEmail").onchange = validateCheckbox;
     document.querySelector("#sendBtnForm").onclick = function (e) {
         e.preventDefault();
+
+
     }
     document.querySelectorAll(".sub-article").forEach(element => {
         element.addEventListener("click", changeMainImg);
     })
+    document.onscroll = checkOffset;
+    
 }
 
 

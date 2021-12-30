@@ -17,33 +17,25 @@
 </head>
 <body>
     <header>
-        <h1 id="title">URUTINA <i class="fas fa-paint-roller" style="color: white; position: relative; margin-right: 0px;"></i>INTURAS</h1>
-        <section id="phone-contacts">
-            <div id="phones">
-                <i class="fas fa-phone" style="color: white;"></i><span class="phone-contact">+34 671 165 478</span> <br>
-            </div>
-            <div id="phones">
-                <i class="fas fa-phone" style="color: white;"></i><span class="phone-contact">+34 643 782 660</span>
-            </div>
-        </section>
-        <nav>
-            <ul id="menu">
-                <li class="menu-item"><a href="index.html">Inicio</a></li>
-                <li class="menu-item" id="dropdown">Servicios
-                    <ul id="dropdown-content">
-                        <li>Pintura</li>
-                        <li>Alisado</li>
-                        <li>Impermeabilización</li>
-                        <li>Decoración</li>
-                        <li>Gotelé</li>
-                        <li>Trabajo Vertical</li>
-                        <li>Pladur</li>
-                    </ul>
-                </li>
-                <li class="menu-item">Galeria</li>
-                <li id="whatsapp-icon"><a href="https://wa.me/34671165478?text=Me%20interesa%20más%20información%20por%20favor." target="_blank" rel="noopener">Envíanos un mensaje<i class="fab fa-whatsapp"></i></a></li>
-            </ul>
-        </nav>
+        <div id="header-container">
+            <h1 id="title">URUTINA <i class="fas fa-paint-roller" style="color: white; position: relative; margin-right: 0px;"></i>INTURAS</h1>
+            <section id="phone-contacts">
+                <div class="phones">
+                    <i class="fas fa-phone" style="color: white;"></i><span class="phone-contact">+34 671 165 478</span> <br>
+                </div>
+                <div class="phones">
+                    <i class="fas fa-phone" style="color: white;"></i><span class="phone-contact">+34 643 782 660</span>
+                </div>
+            </section>
+            <nav>
+                <ul id="menu">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="#services-container">Servicios</a></li>
+                    <li class="menu-item">Galeria</li>
+                    <li id="whatsapp-icon"><a href="https://wa.me/34671165478?text=Me%20interesa%20más%20información%20por%20favor." target="_blank" rel="noopener">Envíanos un mensaje<i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <article id="article-container">
@@ -100,7 +92,7 @@
                     <textarea name="textarea" id="textarea" rows="5" cols="15" >Detalla brevemente tu consulta y nos comunicaremos lo mas pronto posible.</textarea>
                     <input type="hidden" name="subject" value="formulario contacto urutina-pinturas">
                     <div id="captcha" data-netlify-recaptcha="true"></div>
-                    <button id="sendBtnForm" onclick="sendData">ENVIAR</button>
+                    <button id="sendBtnForm">ENVIAR</button>
                     
                 </fieldset>
             </div>
