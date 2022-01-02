@@ -166,6 +166,11 @@ html{
         resize: none;
     }
 
+    #captcha{
+        position: relative;
+        margin-top: 50px;
+    }
+
     #sendBtnForm{
         position: relative;
         margin-top: 25px;
