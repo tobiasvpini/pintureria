@@ -163,7 +163,7 @@ html{
     }
 
     textarea{
-        resize: none;
+        resize:vertical;
     }
 
     #captcha{
