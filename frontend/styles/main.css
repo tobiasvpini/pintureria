@@ -127,6 +127,7 @@ html{
         position: fixed;
         top: 245px;
         bottom: 150px;
+        height: auto;
     }
 
     #openFormSection{
@@ -163,7 +164,7 @@ html{
     }
 
     textarea{
-        resize:vertical;
+        resize:none;
     }
 
     #captcha{
@@ -173,7 +174,7 @@ html{
 
     #sendBtnForm{
         position: relative;
-        margin-top: 25px;
+        margin-top: 5px;
         height: 25px;
         background-color: rgb(65, 65, 221);
         color: white;
