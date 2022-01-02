@@ -1,11 +1,17 @@
 export default function checkOffset() {
-    if(document.querySelector('#form-container').offsetTop + document.querySelector('#form-container').style.height >= document.querySelector('#footer-container').offsetTop - 100){
-        document.querySelector('#form-container').style.position = 'absolute';
-        console.log("hla")
+    const form = document.querySelector("#form-container");
+
+    if((window.innerHeight + window.scrollY ) > document.body.offsetHeight - 155) {
+        form.style.position = "absolute";
+        form.style.top = "2020px"
+        console.log("holaabs")
+    } else{
+        form.style.position = "fixed";
+        form.style.top = form.scrollTop + 243 + "px";      
     }
-    if(document.querySelector("#form-container").offsetTop + window.innerHeight < document.querySelector('#footer-container').offsetTop){
-        document.querySelector('#form-container').style.position = 'fixed'; // restore when you scroll up
-        console.log("gls")
-    }
+      
+    
+    
+    
 }
 
