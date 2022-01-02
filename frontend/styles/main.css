@@ -162,6 +162,10 @@ html{
         color: rgb(228, 226, 226);
     }
 
+    textarea{
+        resize: none;
+    }
+
     #captcha{
         position: relative;
         margin-top: 50px;
