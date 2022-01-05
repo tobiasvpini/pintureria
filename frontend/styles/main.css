@@ -517,6 +517,7 @@
         position: absolute;
         right: 0;
         top: 0;
+        font-size: 1.1rem;
         color: white;
     }
 
@@ -567,6 +568,7 @@
         align-items: center;
         font-size: 10px;
         margin: 2.5px 0 0 0;
+        width: 0;
     }
 
     #services-container{
