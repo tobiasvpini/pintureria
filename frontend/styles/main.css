@@ -506,7 +506,7 @@
         width: 100%;
         min-width: 150px;
         max-width: 250px;
-        height: 300px;
+        height: 350px;
         left: 17.5%;
         top: 140px;
         font-size: 10px;
@@ -539,7 +539,7 @@
     }
 
     textarea{
-        columns: 10;
+        columns: 25;
         resize: none;
         font-size: 10px;
     }
@@ -568,7 +568,7 @@
         align-items: center;
         font-size: 10px;
         margin: 2.5px 0 0 0;
-        width: 0;
+        width: 20px;
     }
 
     #services-container{
