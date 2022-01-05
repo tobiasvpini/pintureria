@@ -541,6 +541,10 @@
         font-size: 10px;
     }
 
+    #captcha{
+        display: none;
+    }
+
     #sendBtnForm{
         position: relative;
         margin-top: 20px;
