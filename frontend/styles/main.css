@@ -8,17 +8,13 @@
     color: rgb(38, 38, 95);
 }
 
-html{
-    height: 100%;
-}
-
 /* laptop */
 @media only screen and (min-width: 1025px) and (max-width:1920px){
     body{
         background-color: rgb(250, 250, 250);
         margin: 0;
         padding: 0;
-        min-height: 100%;
+        min-height: 100vh;
     }
     
     header{
@@ -96,6 +92,8 @@ html{
         padding: 6.5px 16px;
         width: 120px;
         text-align: center;
+  
+
     }
     
     .menu-item:hover{
@@ -125,7 +123,7 @@ html{
 
     #form-container{
         position: fixed;
-        top: 245px;
+        top: 248px;
         bottom: 150px;
         height: auto;
     }
@@ -189,7 +187,6 @@ html{
         position: relative;
         margin-right: 56px;
         margin-top: 75px;
-        margin-bottom: 75px;
         float: right;
         font-size: 10px;
         text-align: center;
@@ -280,18 +277,19 @@ html{
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: flex-end;
-        margin-top: 550px;
+        margin-top: 300px;
         width: 100%;        
         background-color: rgba(83, 164, 158, 0.18);
     }
 
     .service-container{
         display: flex;
-        flex: row;
+        flex-direction: row;
         width: 950px;
         height: 200px;
         padding: 5px;
         margin: 10px;
+        margin-right: 56px;
         float: right;
         position: relative;
         border: 1px solid black;
@@ -306,7 +304,7 @@ html{
     }
 
     #last-article{
-        margin-bottom: 70px;
+        margin-bottom: 80px;
     }
 
     #footer-container{
@@ -367,6 +365,7 @@ html{
         width: 100%;
         max-width: 480px;
         min-width: 320px;
+        min-height: 100vh;
     }
     
     header{
@@ -379,7 +378,7 @@ html{
         min-width: 320px;
         max-width: 480px;
         width: 100%;
-        height: 100px;
+        height: 120px;
         background-color: var(--main-bg-color);   
         z-index: 1;
     }
@@ -387,8 +386,8 @@ html{
     h1{
         position: fixed;
         color: white;
-        margin-top: 25px;
-        margin-left: 20px;
+        margin-top: 45px;
+        margin-left: 70px;
     }
 
     #phone-contacts{
@@ -397,8 +396,8 @@ html{
         flex-direction: row;
         margin-left: 15px;
         padding: 0 5px;
-        left: 0px;
-        top: 75px;
+        left: 55px;
+        top: 95px;
         opacity: 0.9;
     }    
 
@@ -474,7 +473,11 @@ html{
         height: 15px;
     }
 
-    #contact{
+    #form-container{
+        display: none;
+    }
+
+    #contact{ 
         background: linear-gradient(#134e5e, #579665);
         border-radius: 7px;
         position: absolute; 
@@ -485,8 +488,8 @@ html{
         min-width: 150px;
         max-width: 250px;
         height: 350px;
-        margin-top: 0px;
-        margin-left: calc(45% - 120px);
+        left: 17.5%;
+        top: 15px;
         font-size: 10px;
     }
 
@@ -536,33 +539,33 @@ html{
     #services-container{
         position: relative;
         display: flex;
-        margin-top: 125px;
-        flex-direction: row;
+        margin-top: 120px;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: flex-end;
+        width: 100%;
         max-width: 480px;
         min-width: 300px;  
         background-color: rgba(83, 164, 158, 0.18);
+        font-size: 10px;
     }
 
     .service-container{
+        margin-top: 25px;
+        margin-left: 33px;
         display: flex;
-        flex: row;
-        width: 100%;
-        height: 100px;
+        flex-direction: column;
+        height: 300px;
+        width: 150px;
+        padding: 5px;
         position: relative;
         border: 1px solid black;
         background-color: rgba(31, 135, 128, 0.37);
         overflow: hidden;
-        margin-bottom: 25px;
     }
 
     .service-container img{
         width: 150px;
         height: 100px;
         float: left;
-        margin-right: 20px;
     }
 
     #last-article{
