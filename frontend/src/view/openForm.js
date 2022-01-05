@@ -1,11 +1,14 @@
 import hideOpenFormSection from "./hideOpenFormSection.js";
 
-function showForm(){
-    let form = document.querySelector('#form-container');
-    let btn = document.querySelector('#formMobilIcon');
-    form.style.visibility = 'visible';
-    btn.disabled = true;
+let form = document.querySelector('#form-container');
+let btn = document.querySelector('#formMobilIcon');
 
+function showForm(){
+    if(window.matchMedia("(min-width: 320px)").matches){
+        form.style.display = 'block';
+        btn.disabled = true;
+    
+    }
     hideOpenFormSection();
 
     return false;

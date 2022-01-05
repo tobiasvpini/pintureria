@@ -4,6 +4,8 @@ import changeMainImg from "./changeMainImg.js";
 import showForm from "./openForm.js";
 import checkOffset from "./handleScroll.js";
 
+
+
 function addEvents(){
     document.querySelector("#formMobilIcon").onclick = showForm;
     document.querySelector(".fa-times-circle").onclick = hideForm;
@@ -18,7 +20,6 @@ function addEvents(){
         element.addEventListener("click", changeMainImg);
     })
     document.onscroll = checkOffset;
-    
 }
 
 

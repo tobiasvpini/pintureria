@@ -1,10 +1,12 @@
 import cleanForm from "./cleanForm.js"
 import showOpenFormSection from "./openFormSection.js";
 
+let form = document.querySelector("#form-container");
+let btn = document.querySelector('#formMobilIcon');
+
 function hideForm(){
-    let form = document.querySelector("#form-container");
-    let btn = document.querySelector('#formMobilIcon');
-    form.style.visibility = "hidden";
+
+    form.style.display = "none";
     btn.disabled = false;
 
     cleanForm();
