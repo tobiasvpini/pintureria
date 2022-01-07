@@ -1,18 +1,20 @@
-function sendFormData() {
-
-  function sendData() {
-    let XHR = new XMLHttpRequest()
-    let FD = new FormData(form)
-    XHR.open('POST', '#')
-    XHR.send(FD)
+function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
   }
 
-  let form = document.getElementsByName('contact');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault()
-    sendData()
-  })
-
+const handleSubmit = (event) => {
+  event.preventDefault();
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({
+      "form-name": event.target.getAttribute("name"),
+      ...name
+    })
+  });
 }
 
-export default sendFormData
+
+export default handleSubmit;
