@@ -8,11 +8,13 @@
     color: rgb(38, 38, 95);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* laptop */
 @media only screen and (min-width: 1025px) and (max-width:1920px){
-    html{
-        scroll-behavior: smooth;
-    }
+
 
     body{
         background-color: rgb(250, 250, 250);
@@ -401,14 +403,14 @@
         position: fixed;
         color: white;
         margin-top: 45px;
-        margin-left: 70px;
+        margin-left: 50px;
     }
 
     #phone-contacts{
         position: absolute;
         display: flex;
         flex-direction: row;
-        margin-left: 15px;
+        margin-left: 5px;
         padding: 0 5px;
         left: 55px;
         top: 95px;
@@ -587,7 +589,7 @@
         margin-top: 25px;
         margin-left: 15px;
         margin-right: 15px;
-        
+        flex-basis: 38%;
         display: flex;
         flex-direction: column;
         height: 300px;
