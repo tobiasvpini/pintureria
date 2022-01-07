@@ -1,20 +1,14 @@
-function encode(data) {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+document.querySelector("form").addEventListener("submit", handleSubmit);
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  fetch("/", {
-    method: "POST",
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('#contact');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({
-      "form-name": event.target.getAttribute("name"),
-      ...name
-    })
-  });
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
 }
 
-
-export default handleSubmit;

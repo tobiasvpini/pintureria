@@ -3,8 +3,6 @@ import validateCheckbox from "./validateCheckboxes.js";
 import changeMainImg from "./changeMainImg.js";
 import showForm from "./openForm.js";
 import checkOffset from "./handleScroll.js";
-import handleSubmit from "./sendFormData.js";
-
 
 function addEvents(){
     document.querySelector("#formMobilIcon").onclick = showForm;
@@ -20,7 +18,6 @@ function addEvents(){
         element.addEventListener("click", changeMainImg);
     })
     document.onscroll = checkOffset;
-    document.querySelector("#sendBtnForm").onclick = handleSubmit;
 }
 
 
