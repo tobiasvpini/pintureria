@@ -1,14 +1,23 @@
-document.getElementsByName("contact").addEventListener("submit", handleSubmit);
+let form = document.getElementsByName("contact");
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  let myForm = document.getElementsByName('contact');
-  let formData = new FormData(myForm)
-  fetch('/', {
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(e){
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  fetch(form.getAttribute('action'), {
     method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    headers: {
+      'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    },
     body: new URLSearchParams(formData).toString()
-  }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
+  })
+  .then(res => {
+    if (res) {
+        alert('worked');
+    }
+  });
 }
 
