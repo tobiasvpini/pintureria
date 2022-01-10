@@ -9,11 +9,6 @@ function addEvents(){
     document.querySelector(".fa-times-circle").onclick = hideForm;
     document.querySelector("#cboxTelefono").onchange = validateCheckbox;
     document.querySelector("#cboxEmail").onchange = validateCheckbox;
-    document.querySelector("#sendBtnForm").onclick = function (e) {
-        e.preventDefault();
-
-
-    }
     document.querySelectorAll(".sub-article").forEach(element => {
         element.addEventListener("click", changeMainImg);
     })

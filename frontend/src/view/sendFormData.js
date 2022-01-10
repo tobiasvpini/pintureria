@@ -1,4 +1,4 @@
-let form = document.getElementsByName("contact");
+let form = document.querySelector("form");
 
 form.addEventListener("submit", handleSubmit);
 
