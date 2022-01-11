@@ -5,7 +5,7 @@ export default function checkOffset() {
 
         if((window.innerHeight + window.scrollY ) > document.body.offsetHeight - 200) {
             form.style.position = "absolute";
-            form.style.top = "1200px";
+            form.style.top = "1500px";
             console.log("estoy aca")
         } else if(window.scrollY < 1750){
             form.style.position = "fixed";
